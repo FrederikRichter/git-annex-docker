@@ -23,13 +23,6 @@
           gnupg
           openssh
         ];
-        config = {
-          Cmd = [ "${pkgs.git-annex}/bin/git-annex" ];
-          WorkingDir = "/data";
-          Volumes = {
-            "/data" = {};
-          };
-        };
       };
     };
 }
