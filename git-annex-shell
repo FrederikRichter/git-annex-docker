@@ -6,7 +6,7 @@ CONT_NAME=${CONT_NAME:-git-annex:latest}
 data_dir=/home/frederik/Mega/Coding/Git-Annex/data
 # if run by git, assume command is git-annex
 # otherwise, don't assume, to allow other uses
-cmd=git-annex
+cmd=git-annex-shell
 exec docker run --mount type=tmpfs,destination=/tmp/ -it --rm \
     -u $(id -u):$(id -g) \
     -v /etc/passwd:/etc/passwd:ro \
