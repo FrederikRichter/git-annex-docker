@@ -7,7 +7,7 @@ data_dir=/home/frederik/Mega/Coding/Git-Annex/data
 # if run by git, assume command is git-annex
 # otherwise, don't assume, to allow other uses
 cmd=git-annex
-exec docker run --mount type=tmpfs,destination=/tmp/ -i --rm \
+echo docker run --mount type=tmpfs,destination=/tmp/ -i --rm \
     -u $(id -u):$(id -g) \
     -v /etc/passwd:/etc/passwd:ro \
     -v $HOME/.ssh:$HOME/.ssh \
