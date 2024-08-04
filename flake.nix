@@ -2,12 +2,10 @@
   description = "Git Annex Docker image based on NixOS";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs";
-    nixpkgs.inputs.nixpkgs.follows = "nixpkgs";
-    nixpkgs.inputs.nixpkgs.url = "github:NixOS/nixpkgs/commit/05405724efa137a0b899cce5ab4dde463b4fd30b";
+    nixpkgs.url = "github:NixOS/nixpkgs/05405724efa137a0b899cce5ab4dde463b4fd30b";
   };
 
-  outputs = { self, nixpkgs, ... }@inputs:
+  outputs = { self, nixpkgs, ... }:
     let
       pkgs = import nixpkgs {
         system = "x86_64-linux";
