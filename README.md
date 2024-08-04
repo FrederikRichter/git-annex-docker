@@ -10,5 +10,7 @@ Make sure the wrapper script (git-annex.sh) is executable if you want to use it,
 ```bash
 $ nix build
 $ docker load < result
-$ ./git-annex.sh [CMD]
+$ ./git-annex [CMD]
 ```
+
+move git-annex somewhere thats in path so it can be executed globally
