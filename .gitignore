@@ -1,0 +1,18 @@
+# Nix build results
+result
+result-*
+
+# nix-direnv
+.direnv
+
+# Nix shell environment files
+.envrc
+
+# Nix store paths
+/nix/store
+
+# Nix-specific backup files
+*.nix~
+
+# Nix repl history
+.nix-repl-history
