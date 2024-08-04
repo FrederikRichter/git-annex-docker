@@ -23,6 +23,7 @@
           gnupg
           openssh
           findutils
+          bup
         ];
         config = {
           Cmd = [ "${pkgs.git-annex}/bin/git-annex" ];
