@@ -1,9 +1,10 @@
 {
   description = "Git Annex Docker image based on NixOS";
 
-  inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
+inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs";
+    nixpkgs.inputs.nixpkgs.follows = "nixpkgs";
+    nixpkgs.inputs.nixpkgs.url = "github:NixOS/nixpkgs/commit/05405724efa137a0b899cce5ab4dde463b4fd30b";
   };
 
   outputs = { self, nixpkgs, flake-utils }:
