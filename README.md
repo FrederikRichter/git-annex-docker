@@ -8,5 +8,6 @@ Using git-annex latest from https://github.com/NixOS/nixpkgs/tree/05405724efa137
 ```bash
 $ nix build
 $ docker load < result
-$ docker run git-annex:latest
+$ sudo chmod +x git-annex.sh
+$ ./git-annex.sh
 ```
