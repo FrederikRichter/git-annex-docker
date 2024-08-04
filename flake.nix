@@ -24,6 +24,7 @@
           openssh
           findutils
           bup
+          rsync
         ];
         config = {
           Cmd = [ "${pkgs.git-annex}/bin/git-annex" ];
